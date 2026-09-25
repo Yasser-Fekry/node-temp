@@ -1,6 +1,4 @@
 
-
-
 const path = require('path');
 
 // Show the platform-specific path separator
