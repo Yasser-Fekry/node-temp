@@ -11,3 +11,11 @@ console.log(`======= Done Task ========`)
 
 // First to read file
 // Second to write in File
+
+// Creae a new file and write in it big file
+
+const {writeFileSync} = require('fs')
+for(let i = 0 ; i < 10000; i++){
+    writeFileSync('./test2/big.txt', `Hello World ${i}\n`, {flag: 'a'})
+}
+
