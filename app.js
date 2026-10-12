@@ -10,12 +10,19 @@
 //const https = require('./server-create')
 //const express = require('./Express')
 //const Express = require('./Express-2')
+const logeer = require('./logeer')
 //3:27:00
 
-// req => middleware => res
 const express = require('express')
 const app = express()
 
+app.get('/' , logeer , (req,res)=>{
+    res.send('Home')
+})
+
+app.get('/about' , logeer , (req,res)=>{
+    res.send('About')
+})
 
 app.listen(5000, () => {
   console.log('Server is listening on port 5000....')
