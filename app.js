@@ -11,3 +11,12 @@
 //const express = require('./Express')
 //const Express = require('./Express-2')
 //3:27:00
+
+// req => middleware => res
+const express = require('express')
+const app = express()
+
+
+app.listen(5000, () => {
+  console.log('Server is listening on port 5000....')
+})
